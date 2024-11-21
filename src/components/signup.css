@@ -1,0 +1,97 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .signup-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .form-header {
+    margin-bottom: 20px;
+  }
+  
+  .form-header h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff7e5f; /* Vibrant color for heading */
+  }
+  
+  .signup-form {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9; /* Light background for inputs */
+    color: #333;
+    font-size: 1rem;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #ff7e5f; /* Vibrant color for focus */
+  }
+  
+  .submit-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff7e5f; /* Vibrant color for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #e06a50; /* Darker color on hover */
+    transform: scale(1.05);
+  }
+  
+  .submit-button:active {
+    background-color: #ff7e5f;
+    transform: scale(0.95);
+  }
+  
+  @media (max-width: 768px) {
+    .signup-container {
+      padding: 50px 15px;
+    }
+  
+    .form-header h2 {
+      font-size: 2rem;
+    }
+  
+    .signup-card {
+      padding: 30px 20px;
+    }
+  }

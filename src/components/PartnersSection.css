@@ -1,0 +1,142 @@
+/* General Section Styling */
+.partners-section {
+  background: #1a1a1a; /* Dark background color */
+  color: #fff; /* Light text color */
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styling */
+.partners-header {
+  margin-bottom: 40px;
+}
+
+.partners-header h2 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffd700; /* Gold color for heading */
+}
+
+.partners-header p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #f0f0f0;
+}
+
+/* Grid Layout for Partner Logos */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  justify-items: center;
+  gap: 30px; /* Add space between the cards */
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* Styling for Each Partner Card */
+.partner-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 250px; /* Fixed width for better alignment */
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card:hover {
+  transform: translateY(-10px);
+  background: #333; /* Slightly lighter background on hover */
+}
+
+/* Logo Styling */
+.partner-logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 10px; /* Padding around the logo */
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05); /* Scale up logo on hover */
+}
+
+/* Logo Title Styling */
+.partner-card h3 {
+  font-size: 18px;
+  color: #ffd700; /* Gold color for subheadings */
+  margin-top: 10px;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 40px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.cta-button:active {
+  background-color: #007BFF;
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partners-section {
+    padding: 50px 15px;
+  }
+
+  .partners-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .partners-header p {
+    font-size: 1.2rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grid items on mobile */
+  }
+
+  .partner-card {
+    max-width: 200px; /* Slightly smaller card on mobile */
+  }
+}

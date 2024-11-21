@@ -1,0 +1,132 @@
+/* Full-width background with a transparent overlay */
+.header-section {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?fit=crop&w=1400&q=80') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* Navbar Section */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, #007bff, #5a9bff);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background: linear-gradient(135deg, #0056b3, #4a89e8);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Styling for Signup Button */
+.signup-button {
+  background: linear-gradient(135deg, #28a745, #85d09c);
+}
+
+.signup-button:hover {
+  background: linear-gradient(135deg, #1e7e34, #6fc288);
+}
+
+/* Main Overlay and Text */
+.header-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 60px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+}
+
+.header-title {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-subtitle {
+  font-size: 1.75rem;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cta-button {
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  color: white;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #ff6a42, #fd9d75);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2.8rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+  }
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-button {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}

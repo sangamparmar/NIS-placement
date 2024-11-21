@@ -1,0 +1,199 @@
+/* Reset for consistent styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0cccc; /* Light background for the whole page */
+}
+
+/* Location Section */
+.location-section {
+    background: #ffffff; /* White background for the section */
+    color: #333333; /* Dark text color */
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    margin-top: 50px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.location-header {
+    margin-bottom: 30px;
+}
+
+.location-header h2 {
+    font-size: 3.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #3498db; /* Cool blue color for heading */
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+.location-header p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #7f8c8d; /* Soft grey text color */
+}
+
+/* Content Area */
+.location-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+/* Map Container */
+.map-container {
+    flex: 2;
+    min-width: 320px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    color: #2980b9; /* Different shade of blue for subheadings */
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 650px;
+    text-align: left;
+    background-color: #ecf0f1; /* Light grey background for form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+    color: #2980b9; /* Consistent blue for form headings */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    color: #34495e; /* Dark text color */
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background: #ffffff; /* White background for inputs */
+    color: #34495e;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db; /* Cool blue color on focus */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+.submit-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #3498db; /* Cool blue button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    background-color: #3498db;
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .location-section {
+        padding: 50px 15px;
+    }
+
+    .location-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .location-header p {
+        font-size: 1.1rem;
+    }
+
+    .location-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container,
+    .contact-info {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
